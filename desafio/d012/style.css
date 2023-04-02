@@ -1,11 +1,23 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --fonte1: Verdana, Gevena, Tahoma, sans-serif;
+    --fonte2: 'Sriracha', cursive;
+    --fonte3: 'Bebas Neue', cursive;
 }
 
 html, body{
     min-height: 100%vh;
     background-color: rgb(169, 169, 169);
+    font-family: var(--fonte1);
 }
 
 header{
@@ -17,6 +29,8 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte3);
+    font-size: 7vw;
 }
 
 header > p{
@@ -38,6 +52,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3vw;
 }
 
 section.normal {
@@ -51,7 +67,8 @@ section.imagem{
 }
 section.imagem > p {
     background-color: black;
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 footer{
